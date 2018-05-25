@@ -1,0 +1,248 @@
+
+E:\MDT_Document on 172.26.10.41\Multiport Download (binary+src)\4N\1132\Multiport Download (binary+src)w1132\Multiport download tool_src_v3.1132.00>make -fBuild_All.mak Generate_Make_File 
+MAKE Version 5.2  Copyright (c) 1987, 2000 Borland
+	bpr2mak -o./Temporary_Build.mak ./MultiPortFlashDownloadProject.bpr
+Loading project file
+Loading template
+Generating Makefile
+.........................................
+E:\MDT_Document on 172.26.10.41\Multiport Download (binary+src)\4N\1132\Multiport Download (binary+src)w1132\Multiport download tool_src_v3.1132.00>make -fBuild_All.mak Build_Service_Center_Version 
+MAKE Version 5.2  Copyright (c) 1987, 2000 Borland
+	call delete_temp.bat
+delete all temp file...
+E:\MDT_Document on 172.26.10.41\Multiport Download (binary+src)\4N\1132\Multiport Download (binary+src)w1132\Multiport download tool_src_v3.1132.00\output\MultiPortFlashDownloadProject.tds
+	make -DUSERDEFINES=SERVICE_CENTER -fTemporary_Build.mak 
+MAKE Version 5.2  Copyright (c) 1987, 2000 Borland
+	C:\PROGRA~1\Borland\CBUILD~1\Bin\..\BIN\bcc32 -O2 -H=C:\PROGRA~1\Borland\CBUILD~1\Bin\..\lib\vcl60.csm -Vx -Ve -RT- -X- -a8 -b -k- -vi -tWD -tWM- -c -w-par -IMDT_Component\error_handler\src;MDT_Component\thread\src;INIFileHandle\src;Form\MainForm;efusewriter\src;SV5_DownloadThread\src;LinkMapFileManager\src;Form\ToolSettingForm;Form\AboutForm;Form\SetBeginComPortForm;Form\InputImageDlgForm;Form\EFuseParameterViewerForm;META_App\src;"C:\Documents and Settings\mtk70823";Comm;"Comm\USB COM";"META App";GPS;Comm\PCMCIA;FailReason;Form;C:\PROGRA~1\Borland\CBUILD~1\Bin\..\include;C:\PROGRA~1\Borland\CBUILD~1\Bin\..\include\vcl;Common;INIFileHandle;Parameter;Comm\PCMCIA\Inc;Brom_dll\inc;META_dll\inc -DSERVICE_CENTER;NO_WIN32_LEAN_AND_MEAN;NO_STRICT;_NO_VCL -noutput\ .\MultiPortFlashDownloadProject.cpp Form\MainForm\MultiPortFlashDownloadTool.cpp Common\time_utils.cpp Form\AboutForm\form_About.cpp Common\file_utils.cpp Comm\PCMCIA\T_PCMCIA.cpp GPS\T_GPS.cpp GPS\BromDLLProcAddr.cpp GPS\BromDLLWrapper.cpp "Comm\USB COM\T_UsbCom.cpp" Form\SetBeginComPortForm\SetBeginComPort.cpp Form\InputImageDlgForm\InputImageDlg.cpp Form\ToolSettingForm\ToolSetting.cpp Comm\com_util.cpp Form\EFuseParameterViewerForm\EFuseWriterViewerForm.cpp LinkMapFileManager\src\ScatterFileManager.cpp LinkMapFileManager\src\ConfigFileSearcher.cpp SV5_DownloadThread\src\SV5_DownloadThread.cpp efusewriter\src\EFuseWriter.cpp efusewriter\src\EFuseWriterParameter.cpp INIFileHandle\src\MultiPort_Utils.cpp INIFileHandle\src\INIFileHandle.cpp MDT_Component\thread\src\FlashDownLoad.cpp MDT_Component\error_handler\src\GCTrace.cpp LinkMapFileManager\src\GCFileFinder.cpp MDT_Component\error_handler\src\GCGetLastErr.cpp MDT_Component\error_handler\src\MDT_ErrorTypes.cpp MDT_Component\thread\src\T_UpdateParameter.cpp MDT_Component\thread\src\T_META_Common.cpp MDT_Component\thread\src\T_ResetToFactoryDefault.cpp efusewriter\src\mdt_efusewriter_cefusewriterconfigfile.cpp efusewriter\src\mdt_efusewriter_cefusewriterfilereader.cpp efusewriter\src\mdt_efusewriter_cefusewriterlockfile.cpp efusewriter\src\mdt_handle_rwlock.cpp efusewriter\src\EFuseReader.cpp efusewriter\src\cmdtefusereaderhandle.cpp efusewriter\src\cmdtefuseparameterhandle.cpp efusewriter\src\cmdtefusewriterhandle.cpp MDT_Component\thread\src\CriticalSectionManager.cpp 
+Borland C++ 5.6 for Win32 Copyright (c) 1993, 2002 Borland
+.\MultiPortFlashDownloadProject.cpp:
+Warning W8026 .\MDT_Component/error_handler/inc/GCTrace.h 29: Functions taking class-by-value argument(s) are not expanded inline in function GCTrace::set_log_path(string)
+Warning W8026 .\LinkMapFileManager/inc/ScatterFileManager.h 151: Functions taking class-by-value argument(s) are not expanded inline in function SecRO::set_path(string)
+Warning W8026 .\LinkMapFileManager/inc/ScatterFileManager.h 153: Functions taking class-by-value argument(s) are not expanded inline in function SecRO::set_scatter(string)
+Warning W8027 Form\MainForm\MultiPortFlashDownloadTool.h 960: Functions containing switch are not expanded inline
+Form\MainForm\MultiPortFlashDownloadTool.cpp:
+Loaded pre-compiled headers.
+Warning W8026 MDT_Component/error_handler/inc/GCTrace.h 29: Functions taking class-by-value argument(s) are not expanded inline in function GCTrace::set_log_path(string)
+Warning W8026 LinkMapFileManager/inc/ScatterFileManager.h 151: Functions taking class-by-value argument(s) are not expanded inline in function SecRO::set_path(string)
+Warning W8026 LinkMapFileManager/inc/ScatterFileManager.h 153: Functions taking class-by-value argument(s) are not expanded inline in function SecRO::set_scatter(string)
+Warning W8027 Form\MainForm\MultiPortFlashDownloadTool.h 960: Functions containing switch are not expanded inline
+Warning W8022 SV5_DownloadThread/inc/SV5_DownloadThread.h 24: '_fastcall SV5_Thread::DisableBootloader(DL_HANDLE * &)' hides virtual function '_fastcall TBOOT1::DisableBootloader(DL_HANDLE_LIST * &)'
+Warning W8004 Form\MainForm\MultiPortFlashDownloadTool.cpp 629: 'COM_Start' is assigned a value that is never used in function _fastcall TMainForm::query_current_comport(int,int *)
+Warning W8004 Form\MainForm\MultiPortFlashDownloadTool.cpp 498: 'com_number' is assigned a value that is never used in function _fastcall TMainForm::query_current_comport(int,int *)
+Warning W8004 Form\MainForm\MultiPortFlashDownloadTool.cpp 635: 'i' is assigned a value that is never used in function _fastcall TMainForm::record_current_comport(int *)
+Warning W8004 Form\MainForm\MultiPortFlashDownloadTool.cpp 654: 'i' is assigned a value that is never used in function _fastcall TMainForm::get_current_comport_increase(int *,int *)
+Warning W8004 Form\MainForm\MultiPortFlashDownloadTool.cpp 683: 'bfind' is assigned a value that is never used in function _fastcall TMainForm::get_current_comport_decrease(int *,int *)
+Warning W8004 Form\MainForm\MultiPortFlashDownloadTool.cpp 681: 'i' is assigned a value that is never used in function _fastcall TMainForm::get_current_comport_decrease(int *,int *)
+Warning W8004 Form\MainForm\MultiPortFlashDownloadTool.cpp 784: 'count' is assigned a value that is never used in function _fastcall TMainForm::OnDeviceChange(TMessage &)
+Warning W8004 Form\MainForm\MultiPortFlashDownloadTool.cpp 784: 'i' is assigned a value that is never used in function _fastcall TMainForm::OnDeviceChange(TMessage &)
+Warning W8004 Form\MainForm\MultiPortFlashDownloadTool.cpp 2646: 'IsComportAutoPollingSelectAll' is assigned a value that is never used in function _fastcall TMainForm::Update_ComPortNumber()
+Warning W8004 Form\MainForm\MultiPortFlashDownloadTool.cpp 2561: 'i' is assigned a value that is never used in function _fastcall TMainForm::Update_ComPortNumber()
+Warning W8004 Form\MainForm\MultiPortFlashDownloadTool.cpp 3751: 'IsAllStop' is assigned a value that is never used in function TMainForm::btnCOMStopClick(int)
+Warning W8004 Form\MainForm\MultiPortFlashDownloadTool.cpp 4662: 'index' is assigned a value that is never used in function _fastcall TMainForm::ScatterFileButtonClick(TObject *)
+Warning W8004 Form\MainForm\MultiPortFlashDownloadTool.cpp 4695: 'index' is assigned a value that is never used in function TMainForm::LoadAllLinkMapFile(string &)
+Warning W8004 Form\MainForm\MultiPortFlashDownloadTool.cpp 4909: 'index' is assigned a value that is never used in function _fastcall TMainForm::btnReloadScatterFileClick(TObject *)
+Warning W8030 Form\MainForm\MultiPortFlashDownloadTool.cpp 5073: Temporary used for parameter 'folder' in call to 'TMainForm::SearchAllLinkMapFile(string &)' in function TMainForm::Display_Scatter()
+Warning W8030 Form\MainForm\MultiPortFlashDownloadTool.cpp 5074: Temporary used for parameter 'folder_path' in call to 'TMainForm::LoadAllLinkMapFile(string &)' in function TMainForm::Display_Scatter()
+Warning W8030 Form\MainForm\MultiPortFlashDownloadTool.cpp 5076: Temporary used for parameter 'RootFolderPath' in call to 'CLinkMapFile::SetRootFolderPath(string &)' in function TMainForm::Display_Scatter()
+Warning W8004 Form\MainForm\MultiPortFlashDownloadTool.cpp 5291: 'isNeedUpdate' is assigned a value that is never used in function _fastcall TMainForm::Show_scatter_and_loadClick(TObject *)
+Common\time_utils.cpp:
+Form\AboutForm\form_About.cpp:
+Loaded pre-compiled headers.
+Common\file_utils.cpp:
+Loaded pre-compiled headers.
+Comm\PCMCIA\T_PCMCIA.cpp:
+GPS\T_GPS.cpp:
+GPS\BromDLLProcAddr.cpp:
+GPS\BromDLLWrapper.cpp:
+Comm\USB COM\T_UsbCom.cpp:
+Warning W8026 mdt_component/error_handler/inc/GCTrace.h 29: Functions taking class-by-value argument(s) are not expanded inline in function GCTrace::set_log_path(string)
+Warning W8004 Comm\USB COM\T_UsbCom.cpp 120: 'b_match' is assigned a value that is never used in function _fastcall TBOOT1::EnumerateUsbCom(unsigned short)
+Form\SetBeginComPortForm\SetBeginComPort.cpp:
+Terminate batch job (Y/N)? 
+
+E:\MDT_Document on 172.26.10.41\Multiport Download (binary+src)\4N\1132\Multiport Download (binary+src)w1132\Multiport download tool_src_v3.1132.00>make -fBuild_All.mak Build_Normal_Version 
+MAKE Version 5.2  Copyright (c) 1987, 2000 Borland
+	call delete_temp.bat
+Terminate batch job (Y/N)? 
+
+E:\MDT_Document on 172.26.10.41\Multiport Download (binary+src)\4N\1132\Multiport Download (binary+src)w1132\Multiport download tool_src_v3.1132.00>make -fBuild_All.mak Package_All_SourceCode 
+MAKE Version 5.2  Copyright (c) 1987, 2000 Borland
+	call delete_temp.bat
+delete all temp file...
+Deleted file - E:\MDT_Document on 172.26.10.41\Multiport Download (binary+src)\4N\1132\Multiport Download (binary+src)w1132\Multiport download tool_src_v3.1132.00\output\BromDLLProcAddr.obj
+Deleted file - E:\MDT_Document on 172.26.10.41\Multiport Download (binary+src)\4N\1132\Multiport Download (binary+src)w1132\Multiport download tool_src_v3.1132.00\output\BromDLLWrapper.obj
+Deleted file - E:\MDT_Document on 172.26.10.41\Multiport Download (binary+src)\4N\1132\Multiport Download (binary+src)w1132\Multiport download tool_src_v3.1132.00\output\file_utils.obj
+Deleted file - E:\MDT_Document on 172.26.10.41\Multiport Download (binary+src)\4N\1132\Multiport Download (binary+src)w1132\Multiport download tool_src_v3.1132.00\output\form_About.obj
+Deleted file - E:\MDT_Document on 172.26.10.41\Multiport Download (binary+src)\4N\1132\Multiport Download (binary+src)w1132\Multiport download tool_src_v3.1132.00\output\MultiPortFlashDownloadProject.obj
+Deleted file - E:\MDT_Document on 172.26.10.41\Multiport Download (binary+src)\4N\1132\Multiport Download (binary+src)w1132\Multiport download tool_src_v3.1132.00\output\MultiPortFlashDownloadTool.obj
+Deleted file - E:\MDT_Document on 172.26.10.41\Multiport Download (binary+src)\4N\1132\Multiport Download (binary+src)w1132\Multiport download tool_src_v3.1132.00\output\time_utils.obj
+Deleted file - E:\MDT_Document on 172.26.10.41\Multiport Download (binary+src)\4N\1132\Multiport Download (binary+src)w1132\Multiport download tool_src_v3.1132.00\output\T_GPS.obj
+Deleted file - E:\MDT_Document on 172.26.10.41\Multiport Download (binary+src)\4N\1132\Multiport Download (binary+src)w1132\Multiport download tool_src_v3.1132.00\output\T_PCMCIA.obj
+Deleted file - E:\MDT_Document on 172.26.10.41\Multiport Download (binary+src)\4N\1132\Multiport Download (binary+src)w1132\Multiport download tool_src_v3.1132.00\output\T_UsbCom.obj
+E:\MDT_Document on 172.26.10.41\Multiport Download (binary+src)\4N\1132\Multiport Download (binary+src)w1132\Multiport download tool_src_v3.1132.00\output\MultiPortFlashDownloadProject.tds
+	.\tool\zip -r -9 ..\Multiport_download_src_v5.1132.00.00.zip .
+updating: BACKUP.ini (188 bytes security) (deflated 59%)
+updating: Brom_dll/ (256 bytes security) (stored 0%)
+updating: Brom_dll/inc/ (256 bytes security) (stored 0%)
+updating: Brom_dll/inc/brom.h (188 bytes security) (deflated 80%)
+updating: Brom_dll/inc/com_enum.h (188 bytes security) (deflated 66%)
+updating: Brom_dll/inc/DOWNLOAD.H (188 bytes security) (deflated 71%)
+updating: Brom_dll/inc/external_memory_setting.h (188 bytes security) (deflated 75%)
+updating: Brom_dll/inc/flashtool.h (188 bytes security) (deflated 80%)
+updating: Brom_dll/inc/flashtool_api.h (188 bytes security) (deflated 81%)
+updating: Brom_dll/inc/flashtool_handle.h (188 bytes security) (deflated 83%)
+updating: Brom_dll/inc/mtk_mcu.h (188 bytes security) (deflated 68%)
+updating: Brom_dll/inc/mtk_resource.h (188 bytes security) (deflated 69%)
+updating: Brom_dll/inc/mtk_status.h (188 bytes security) (deflated 75%)
+updating: Brom_dll/inc/rom_setting.h (188 bytes security) (deflated 68%)
+updating: Brom_dll/inc/USBSwitchDLLibrary.h (188 bytes security) (deflated 67%)
+updating: Brom_dll/lib/ (256 bytes security) (stored 0%)
+updating: Brom_dll/lib/brom.lib (188 bytes security) (deflated 74%)
+updating: Brom_dll/lib/USBSwitchDLLibrary.lib (188 bytes security) (deflated 87%)
+updating: Build_All.bat (188 bytes security) (deflated 52%)
+updating: Build_All.mak (188 bytes security) (deflated 65%)
+updating: Build_Normal.bat (188 bytes security) (deflated 47%)
+updating: Comm/ (256 bytes security) (stored 0%)
+updating: Comm/com_util.cpp (188 bytes security) (deflated 76%)
+updating: Comm/com_util.h (188 bytes security) (deflated 53%)
+updating: Comm/PCMCIA/ (256 bytes security) (stored 0%)
+updating: Comm/PCMCIA/Inc/ (256 bytes security) (stored 0%)
+updating: Comm/PCMCIA/Inc/oxdevicequery.h (188 bytes security) (deflated 68%)
+updating: Comm/PCMCIA/T_PCMCIA.cpp (188 bytes security) (deflated 61%)
+updating: Comm/PCMCIA/T_PCMCIA.h (188 bytes security) (deflated 60%)
+updating: Comm/USB COM/ (256 bytes security) (stored 0%)
+updating: Comm/USB COM/T_UsbCom.cpp (188 bytes security) (deflated 80%)
+updating: Common/ (256 bytes security) (stored 0%)
+updating: Common/Container_Common.h (188 bytes security) (deflated 59%)
+updating: Common/factory_common.h (188 bytes security) (deflated 60%)
+updating: Common/file_utils.cpp (188 bytes security) (deflated 64%)
+updating: Common/file_utils.h (188 bytes security) (deflated 62%)
+updating: Common/MD_msg.h (188 bytes security) (deflated 60%)
+updating: Common/Multiport_Common.h (188 bytes security) (deflated 66%)
+updating: Common/time_utils.cpp (188 bytes security) (deflated 64%)
+updating: Common/time_utils.h (188 bytes security) (deflated 61%)
+updating: cpplint.py (188 bytes security) (deflated 70%)
+updating: delete_temp.bat (188 bytes security) (deflated 48%)
+updating: efusewriter/ (256 bytes security) (stored 0%)
+updating: efusewriter/inc/ (256 bytes security) (stored 0%)
+updating: efusewriter/inc/cmdtefuseparameterhandle.h (188 bytes security) (deflated 59%)
+updating: efusewriter/inc/cmdtefusereaderhandle.h (188 bytes security) (deflated 64%)
+updating: efusewriter/inc/cmdtefusewriterhandle.h (188 bytes security) (deflated 62%)
+updating: efusewriter/inc/EFuseReader.h (188 bytes security) (deflated 61%)
+updating: efusewriter/inc/EFuseWriter.h (188 bytes security) (deflated 63%)
+updating: efusewriter/inc/EFuseWriterParameter.h (188 bytes security) (deflated 76%)
+updating: efusewriter/inc/mdt_efusewriter_cefusewriterconfigfile.h (188 bytes security) (deflated 67%)
+updating: efusewriter/inc/mdt_efusewriter_cefusewriterfilereader.h (188 bytes security) (deflated 68%)
+updating: efusewriter/inc/mdt_efusewriter_cefusewriterlockfile.h (188 bytes security) (deflated 66%)
+updating: efusewriter/inc/mdt_handle_rwlock.h (188 bytes security) (deflated 68%)
+updating: efusewriter/src/ (256 bytes security) (stored 0%)
+updating: efusewriter/src/cmdtefuseparameterhandle.cpp (188 bytes security) (deflated 84%)
+updating: efusewriter/src/cmdtefusereaderhandle.cpp (188 bytes security) (deflated 84%)
+updating: efusewriter/src/cmdtefusewriterhandle.cpp (188 bytes security) (deflated 82%)
+updating: efusewriter/src/EFuseReader.cpp (188 bytes security) (deflated 72%)
+updating: efusewriter/src/EFuseWriter.cpp (188 bytes security) (deflated 76%)
+updating: efusewriter/src/EFuseWriterParameter.cpp (188 bytes security) (deflated 86%)
+updating: efusewriter/src/mdt_efusewriter_cefusewriterconfigfile.cpp (188 bytes security) (deflated 84%)
+updating: efusewriter/src/mdt_efusewriter_cefusewriterfilereader.cpp (188 bytes security) (deflated 73%)
+updating: efusewriter/src/mdt_efusewriter_cefusewriterlockfile.cpp (188 bytes security) (deflated 72%)
+updating: efusewriter/src/mdt_handle_rwlock.cpp (188 bytes security) (deflated 79%)
+updating: Form/ (256 bytes security) (stored 0%)
+updating: Form/AboutForm/ (256 bytes security) (stored 0%)
+updating: Form/AboutForm/form_About.cpp (188 bytes security) (deflated 67%)
+updating: Form/AboutForm/form_About.dfm (188 bytes security) (deflated 76%)
+updating: Form/AboutForm/form_About.h (188 bytes security) (deflated 65%)
+updating: Form/EFuseParameterViewerForm/ (256 bytes security) (stored 0%)
+updating: Form/EFuseParameterViewerForm/EFuseWriterViewerForm.cpp (188 bytes security) (deflated 86%)
+updating: Form/EFuseParameterViewerForm/EFuseWriterViewerForm.dfm (188 bytes security) (deflated 89%)
+updating: Form/EFuseParameterViewerForm/EFuseWriterViewerForm.h (188 bytes security) (deflated 79%)
+updating: Form/InputImageDlgForm/ (256 bytes security) (stored 0%)
+updating: Form/InputImageDlgForm/InputImageDlg.cpp (188 bytes security) (deflated 74%)
+updating: Form/InputImageDlgForm/InputImageDlg.dfm (188 bytes security) (deflated 95%)
+updating: Form/InputImageDlgForm/InputImageDlg.h (188 bytes security) (deflated 63%)
+updating: Form/MainForm/ (256 bytes security) (stored 0%)
+updating: Form/MainForm/MultiPortFlashDownloadTool.cpp (188 bytes security) (deflated 82%)
+updating: Form/MainForm/MultiPortFlashDownloadTool.dfm (188 bytes security) (deflated 88%)
+updating: Form/MainForm/MultiPortFlashDownloadTool.h (188 bytes security) (deflated 79%)
+updating: Form/SetBeginComPortForm/ (256 bytes security) (stored 0%)
+updating: Form/SetBeginComPortForm/SetBeginComPort.cpp (188 bytes security) (deflated 73%)
+updating: Form/SetBeginComPortForm/SetBeginComPort.dfm (188 bytes security) (deflated 58%)
+updating: Form/SetBeginComPortForm/SetBeginComPort.h (188 bytes security) (deflated 69%)
+updating: Form/Temporary_Form/ (256 bytes security) (stored 0%)
+updating: Form/Temporary_Form/form_MultiLoad.cpp (188 bytes security) (deflated 82%)
+updating: Form/Temporary_Form/form_MultiLoad.dfm (188 bytes security) (deflated 87%)
+updating: Form/Temporary_Form/form_MultiLoad.h (188 bytes security) (deflated 72%)
+updating: Form/ToolSettingForm/ (256 bytes security) (stored 0%)
+updating: Form/ToolSettingForm/ToolSetting.cpp (188 bytes security) (deflated 81%)
+updating: Form/ToolSettingForm/ToolSetting.dfm (188 bytes security) (deflated 87%)
+updating: Form/ToolSettingForm/ToolSetting.h (188 bytes security) (deflated 76%)
+updating: GPS/ (256 bytes security) (stored 0%)
+updating: GPS/BromDLLProcAddr.cpp (188 bytes security) (deflated 85%)
+updating: GPS/BromDLLWrapper.cpp (188 bytes security) (deflated 82%)
+updating: GPS/inc/ (256 bytes security) (stored 0%)
+updating: GPS/inc/BromDLLProcAddr.h (188 bytes security) (deflated 76%)
+updating: GPS/inc/BromDLLWrapper.h (188 bytes security) (deflated 71%)
+updating: GPS/inc/gps_brom.h (188 bytes security) (deflated 78%)
+updating: GPS/inc/gps_DOWNLOAD.H (188 bytes security) (deflated 68%)
+updating: GPS/inc/gps_flashtool.h (188 bytes security) (deflated 78%)
+updating: GPS/inc/gps_flashtool_handle.h (188 bytes security) (deflated 79%)
+updating: GPS/inc/gps_mtk_mcu.h (188 bytes security) (deflated 61%)
+updating: GPS/inc/gps_mtk_resource.h (188 bytes security) (deflated 69%)
+updating: GPS/src/ (256 bytes security) (stored 0%)
+updating: GPS/T_GPS.cpp (188 bytes security) (deflated 71%)
+updating: ImageResource/ (256 bytes security) (stored 0%)
+updating: ImageResource/Bootloader_USB_DL_logo.bmp (188 bytes security) (deflated 94%)
+updating: ImageResource/BootROM_USB_DL_logo.bmp (188 bytes security) (deflated 94%)
+updating: INIFileHandle/ (256 bytes security) (stored 0%)
+updating: INIFileHandle/inc/ (256 bytes security) (stored 0%)
+updating: INIFileHandle/inc/INIFileHandle.h (188 bytes security) (deflated 85%)
+updating: INIFileHandle/inc/MultiPort_Utils.h (188 bytes security) (deflated 62%)
+updating: INIFileHandle/src/ (256 bytes security) (stored 0%)
+updating: INIFileHandle/src/INIFileHandle.cpp (188 bytes security) (deflated 88%)
+updating: INIFileHandle/src/MultiPort_Utils.cpp (188 bytes security) (deflated 61%)
+updating: LinkMapFileManager/ (256 bytes security) (stored 0%)
+updating: LinkMapFileManager/inc/ (256 bytes security) (stored 0%)
+updating: LinkMapFileManager/inc/ConfigFileSearcher.h (188 bytes security) (deflated 46%)
+updating: LinkMapFileManager/inc/GCFileFinder.h (188 bytes security) (deflated 60%)
+updating: LinkMapFileManager/inc/ScatterFileManager.h (188 bytes security) (deflated 69%)
+updating: LinkMapFileManager/src/ (256 bytes security) (stored 0%)
+updating: LinkMapFileManager/src/ConfigFileSearcher.cpp (188 bytes security) (deflated 46%)
+updating: LinkMapFileManager/src/GCFileFinder.cpp (188 bytes security) (deflated 64%)
+updating: LinkMapFileManager/src/ScatterFileManager.cpp (188 bytes security) (deflated 80%)
+updating: LinkMapFileManager/src/ScatterFileManager.cpp~ (188 bytes security) (deflated 80%)
+updating: MDT_Component/ (256 bytes security) (stored 0%)
+updating: MDT_Component/error_handler/ (256 bytes security) (stored 0%)
+updating: MDT_Component/error_handler/inc/ (256 bytes security) (stored 0%)
+updating: MDT_Component/error_handler/inc/GCGetLastErr.h (188 bytes security) (deflated 61%)
+updating: MDT_Component/error_handler/inc/GCTrace.h (188 bytes security) (deflated 59%)
+updating: MDT_Component/error_handler/inc/MDT_ErrorTypes.h (188 bytes security) (deflated 66%)
+updating: MDT_Component/error_handler/src/ (256 bytes security) (stored 0%)
+updating: MDT_Component/error_handler/src/GCGetLastErr.cpp (188 bytes security) (deflated 60%)
+updating: MDT_Component/error_handler/src/GCTrace.cpp (188 bytes security) (deflated 73%)
+updating: MDT_Component/error_handler/src/MDT_ErrorTypes.cpp (188 bytes security) (deflated 73%)
+updating: MDT_Component/thread/ (256 bytes security) (stored 0%)
+updating: MDT_Component/thread/inc/ (256 bytes security) (stored 0%)
+updating: MDT_Component/thread/inc/CriticalSectionManager.h (188 bytes security) (deflated 54%)
+updating: MDT_Component/thread/inc/FlashDownLoad.h (188 bytes security) (deflated 73%)
+updating: MDT_Component/thread/inc/METAAPP_common.h (188 bytes security) (deflated 60%)
+updating: MDT_Component/thread/inc/OSD_com_port_manager.h (188 bytes security) (deflated 61%)
+updating: MDT_Component/thread/inc/ThreadManager.h (188 bytes security) (deflated 65%)
+updating: MDT_Component/thread/src/ (256 bytes security) (stored 0%)
+updating: MDT_Component/thread/src/CriticalSectionManager.cpp (188 bytes security) (deflated 77%)
+updating: MDT_Component/thread/src/FlashDownLoad.cpp (188 bytes security) (deflated 81%)
+updating: MDT_Component/thread/src/ThreadManager.cpp (188 bytes security) (deflated 77%)
+updating: MDT_Component/thread/src/T_META_Common.cpp (188 bytes security) (deflated 77%)
+updating: MDT_Component/thread/src/T_ResetToFactoryDefault.cpp (188 bytes security) (deflated 62%)
+updating: MDT_Component/thread/src/T_UpdateParameter.cpp (188 bytes security) (deflated 84%)
+updating: META_dll/ (256 bytes security) (stored 0%)
+updating: META_dll/inc/ (256 bytes security) (stored 0%)
+updating: META_dll/inc/meta.h (188 bytes security) (deflated 85%)
+updating: META_dll/inc/meta_cct.h (188 bytes security) (deflated 78%)
+updating: META_dll/lib/ (256 bytes security) (stored 0%)
+updating: META_dll/lib/Controls.dll (188 bytes security) (deflated 56%)
+updating: META_dll/lib/Controls.lib (188 bytes security) (deflated 81%)
+updating: META_dll/lib/META_DLL.dll (188 bytes security)Terminate batch job (Y/N)? 
+
+E:\MDT_Document on 172.26.10.41\Multiport Download (binary+src)\4N\1132\Multiport Download (binary+src)w1132\Multiport download tool_src_v3.1132.00>make -fBuild_All.mak Delete_Make_File 
+MAKE Version 5.2  Copyright (c) 1987, 2000 Borland
+	del Temporary_Build.mak
+Terminate batch job (Y/N)? 

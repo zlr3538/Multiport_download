@@ -1,0 +1,302 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="output\MultiPortFlashDownloadProject.exe"/>
+    <OBJFILES value="output\MultiPortFlashDownloadProject.obj 
+      output\MultiPortFlashDownloadTool.obj output\time_utils.obj 
+      output\form_About.obj output\file_utils.obj output\T_PCMCIA.obj 
+      output\T_GPS.obj output\BromDLLProcAddr.obj output\BromDLLWrapper.obj 
+      output\T_UsbCom.obj output\SetBeginComPort.obj output\InputImageDlg.obj 
+      output\ToolSetting.obj output\com_util.obj 
+      output\EFuseWriterViewerForm.obj output\ScatterFileManager.obj 
+      output\ConfigFileSearcher.obj output\SV5_DownloadThread.obj 
+      output\EFuseWriter.obj output\EFuseWriterParameter.obj 
+      output\MultiPort_Utils.obj output\INIFileHandle.obj 
+      output\FlashDownLoad.obj output\GCTrace.obj output\GCFileFinder.obj 
+      output\GCGetLastErr.obj output\MDT_ErrorTypes.obj 
+      output\T_UpdateParameter.obj output\T_META_Common.obj 
+      output\T_ResetToFactoryDefault.obj 
+      output\mdt_efusewriter_cefusewriterconfigfile.obj 
+      output\mdt_efusewriter_cefusewriterfilereader.obj 
+      output\mdt_efusewriter_cefusewriterlockfile.obj 
+      output\mdt_handle_rwlock.obj output\EFuseReader.obj 
+      output\cmdtefusereaderhandle.obj output\cmdtefuseparameterhandle.obj 
+      output\cmdtefusewriterhandle.obj output\CriticalSectionManager.obj 
+      output\Form_Changepw.obj output\Form_EngineerPasswd.obj"/>
+    <RESFILES value="MultiPortFlashDownloadProject.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) Form\MainForm\MultiPortFlashDownloadTool.dfm 
+      Form\AboutForm\form_About.dfm Form\SetBeginComPortForm\SetBeginComPort.dfm 
+      Form\InputImageDlgForm\InputImageDlg.dfm 
+      Form\ToolSettingForm\ToolSetting.dfm 
+      Form\EFuseParameterViewerForm\EFuseWriterViewerForm.dfm 
+      Form\ChgpasswdForm\Form_Changepw.dfm 
+      Form\EngineerpwForm\Form_EngineerPasswd.dfm"/>
+    <LIBFILES value="&quot;C:\Program Files\Borland\CBuilder6\Lib\Psdk\setupapi.lib&quot; 
+      sla_challenge\lib\SLA_Challenge.lib META_dll\lib\META_DLL.lib 
+      META_dll\lib\Controls.lib Brom_dll\lib\brom.lib 
+      Brom_dll\lib\USBSwitchDLLibrary.lib Brom_dll\lib\FlashtoolLib.lib 
+      Des\lib\des.lib"/>
+    <LIBRARIES value="vcldb.lib vclx.lib bcbsmp.lib adortl.lib vcl.lib rtl.lib dbrtl.lib"/>
+    <SPARELIBS value="dbrtl.lib rtl.lib vcl.lib adortl.lib bcbsmp.lib vclx.lib vcldb.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi vclx.bpi bcbsmp.bpi dbrtl.bpi adortl.bpi vcldb.bpi 
+      qrpt.bpi bdertl.bpi dsnap.bpi cds.bpi bdecds.bpi teeui.bpi teedb.bpi 
+      tee.bpi vcldbx.bpi teeqr.bpi ibxpress.bpi visualclx.bpi visualdbclx.bpi 
+      vclie.bpi xmlrtl.bpi inet.bpi inetdbbde.bpi inetdbxpress.bpi nmfast.bpi 
+      bcbie.bpi soaprtl.bpi dclocx.bpi dbexpress.bpi dbxcds.bpi indy.bpi 
+      bcb2kaxserver.bpi MMTools_c6.bpi dclusr.bpi"/>
+    <PATHCPP value=".;Form\MainForm;Common;Form\AboutForm;Comm\PCMCIA;GPS;&quot;Comm\USB COM&quot;;Form\SetBeginComPortForm;Form\InputImageDlgForm;Form\ToolSettingForm;Comm;Form\EFuseParameterViewerForm;LinkMapFileManager\src;SV5_DownloadThread\src;efusewriter\src;INIFileHandle\src;MDT_Component\thread\src;MDT_Component\error_handler\src;Form\ChgpasswdForm;Form\EngineerpwForm"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="$(USERDEFINES);NO_WIN32_LEAN_AND_MEAN"/>
+    <SYSDEFINES value="NO_STRICT;_NO_VCL"/>
+    <MAINSOURCE value="MultiPortFlashDownloadProject.cpp"/>
+    <INCLUDEPATH value="Form\EngineerpwForm;Form\ChgpasswdForm;MDT_Component\error_handler\src;MDT_Component\thread\src;INIFileHandle\src;Form\MainForm;efusewriter\src;SV5_DownloadThread\src;LinkMapFileManager\src;Form\ToolSettingForm;Form\AboutForm;Form\SetBeginComPortForm;Form\InputImageDlgForm;Form\EFuseParameterViewerForm;META_App\src;&quot;C:\Documents and Settings\mtk70823&quot;;Comm;&quot;Comm\USB COM&quot;;&quot;META App&quot;;GPS;Comm\PCMCIA;FailReason;Form;$(BCB)\include;$(BCB)\include\vcl;Common;INIFileHandle;Parameter;Comm\PCMCIA\Inc;Brom_dll\inc;META_dll\inc;E:\MTK_Tool\MDT\W1332\Official\Multiport_download_src_v5.1332.00.00\Des\inc"/>
+    <LIBPATH value="Form\EngineerpwForm;Form\ChgpasswdForm;MDT_Component\error_handler\src;MDT_Component\thread\src;INIFileHandle\src;Form\MainForm;efusewriter\src;SV5_DownloadThread\src;LinkMapFileManager\src;Form\ToolSettingForm;Form\AboutForm;Form\SetBeginComPortForm;Form\InputImageDlgForm;Form\EFuseParameterViewerForm;META_App\src;&quot;C:\Documents and Settings\mtk70823&quot;;Comm;&quot;Comm\USB COM&quot;;&quot;META App&quot;;GPS;Comm\PCMCIA;FailReason;Form;Common;INIFileHandle;&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\Lib\Psdk;E:\MTK_Tool\MDT\W1332\Official\Multiport_download_src_v5.1332.00.00\Des\lib"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-IForm\EngineerpwForm -IForm\ChgpasswdForm 
+      -IMDT_Component\error_handler\src -IMDT_Component\thread\src 
+      -IINIFileHandle\src -IForm\MainForm -Iefusewriter\src 
+      -ISV5_DownloadThread\src -ILinkMapFileManager\src -IForm\ToolSettingForm 
+      -IForm\AboutForm -IForm\SetBeginComPortForm -IForm\InputImageDlgForm 
+      -IForm\EFuseParameterViewerForm -IMETA_App\src 
+      -I&quot;C:\Documents and Settings\mtk70823&quot; -IComm -I&quot;Comm\USB COM&quot; 
+      -I&quot;META App&quot; -IGPS -IComm\PCMCIA -IFailReason -IForm -I$(BCB)\include 
+      -I$(BCB)\include\vcl -ICommon -IINIFileHandle -IParameter 
+      -IComm\PCMCIA\Inc -IBrom_dll\inc -IMETA_dll\inc 
+      -IE:\MTK_Tool\MDT\W1332\Official\Multiport_download_src_v5.1332.00.00\Des\inc 
+      -src_suffix cpp -D$(USERDEFINES) -DNO_WIN32_LEAN_AND_MEAN -boa"/>
+    <CFLAG1 value="-O2 -H=$(BCB)\lib\vcl60.csm -Vx -Ve -RT- -X- -a8 -b -k- -vi -tWD -tWM- -c"/>
+    <PFLAGS value="-N2output -N0output -$Y- -$L- -$D- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zn"/>
+    <LFLAGS value="-loutput -Ioutput -D&quot;&quot; -aa -Tpe -GD -s -Gn -Gi -M"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="MultiPortFlashDownloadProject.res" FORMNAME="" UNITNAME="MultiPortFlashDownloadProject.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="MultiPortFlashDownloadProject.cpp" FORMNAME="" UNITNAME="MultiPortFlashDownloadProject" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\MainForm\MultiPortFlashDownloadTool.cpp" FORMNAME="MainForm" UNITNAME="MultiPortFlashDownloadTool" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Common\time_utils.cpp" FORMNAME="" UNITNAME="time_utils" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\AboutForm\form_About.cpp" FORMNAME="Form_AboutMD" UNITNAME="form_About" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Common\file_utils.cpp" FORMNAME="" UNITNAME="file_utils" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Comm\PCMCIA\T_PCMCIA.cpp" FORMNAME="" UNITNAME="T_PCMCIA" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="GPS\T_GPS.cpp" FORMNAME="" UNITNAME="T_GPS.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="GPS\BromDLLProcAddr.cpp" FORMNAME="" UNITNAME="BromDLLProcAddr.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="GPS\BromDLLWrapper.cpp" FORMNAME="" UNITNAME="BromDLLWrapper.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Comm\USB COM\T_UsbCom.cpp" FORMNAME="" UNITNAME="T_UsbCom" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\SetBeginComPortForm\SetBeginComPort.cpp" FORMNAME="dlgSetBeginComPort" UNITNAME="SetBeginComPort" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ScatterFileManager.h" FORMNAME="" UNITNAME="ScatterFileManager.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="GCTrace.h" FORMNAME="" UNITNAME="GCTrace.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="GCFileFinder.h" FORMNAME="" UNITNAME="GCFileFinder.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="GCGetLastErr.h" FORMNAME="" UNITNAME="GCGetLastErr.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\InputImageDlgForm\InputImageDlg.cpp" FORMNAME="frmInputImage" UNITNAME="InputImageDlg" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="C:\Program Files\Borland\CBuilder6\Lib\Psdk\setupapi.lib" FORMNAME="" UNITNAME="setupapi.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="C:\Program Files\Borland\CBuilder6\Include\setupapi.h" FORMNAME="" UNITNAME="setupapi.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\ToolSettingForm\ToolSetting.cpp" FORMNAME="tool_setting" UNITNAME="ToolSetting" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Comm\com_util.cpp" FORMNAME="" UNITNAME="com_util" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Comm\com_util.h" FORMNAME="" UNITNAME="com_util.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ConfigFileSearcher.h" FORMNAME="" UNITNAME="ConfigFileSearcher.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SV5_DownloadThread.h" FORMNAME="" UNITNAME="SV5_DownloadThread.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="EFuseWriter.h" FORMNAME="" UNITNAME="EFuseWriter.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="EFuseWriterParameter.h" FORMNAME="" UNITNAME="EFuseWriterParameter.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="MDT_ErrorTypes.h" FORMNAME="" UNITNAME="MDT_ErrorTypes.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\EFuseParameterViewerForm\EFuseWriterViewerForm.cpp" FORMNAME="EFuseWriterViewer" UNITNAME="EFuseWriterViewerForm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Brom_dll\inc\brom.h" FORMNAME="" UNITNAME="brom.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Brom_dll\inc\Brom_EFuseWriter.h" FORMNAME="" UNITNAME="Brom_EFuseWriter.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Brom_dll\inc\com_enum.h" FORMNAME="" UNITNAME="com_enum.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Brom_dll\inc\DOWNLOAD.H" FORMNAME="" UNITNAME="DOWNLOAD.H" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Brom_dll\inc\external_memory_setting.h" FORMNAME="" UNITNAME="external_memory_setting.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Brom_dll\inc\flashtool.h" FORMNAME="" UNITNAME="flashtool.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Brom_dll\inc\flashtool_api.h" FORMNAME="" UNITNAME="flashtool_api.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Brom_dll\inc\flashtool_handle.h" FORMNAME="" UNITNAME="flashtool_handle.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Brom_dll\inc\mtk_mcu.h" FORMNAME="" UNITNAME="mtk_mcu.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Brom_dll\inc\mtk_resource.h" FORMNAME="" UNITNAME="mtk_resource.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Brom_dll\inc\mtk_status.h" FORMNAME="" UNITNAME="mtk_status.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Brom_dll\inc\rom_setting.h" FORMNAME="" UNITNAME="rom_setting.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="LinkMapFileManager\src\ScatterFileManager.cpp" FORMNAME="" UNITNAME="ScatterFileManager" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="LinkMapFileManager\src\ConfigFileSearcher.cpp" FORMNAME="" UNITNAME="ConfigFileSearcher" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SV5_DownloadThread\src\SV5_DownloadThread.cpp" FORMNAME="" UNITNAME="SV5_DownloadThread" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="efusewriter\src\EFuseWriter.cpp" FORMNAME="" UNITNAME="EFuseWriter" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="efusewriter\src\EFuseWriterParameter.cpp" FORMNAME="" UNITNAME="EFuseWriterParameter" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="sla_challenge\lib\SLA_Challenge.lib" FORMNAME="" UNITNAME="SLA_Challenge.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="INIFileHandle\src\MultiPort_Utils.cpp" FORMNAME="" UNITNAME="MultiPort_Utils" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="INIFileHandle\src\INIFileHandle.cpp" FORMNAME="" UNITNAME="INIFileHandle" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="MDT_Component\thread\src\FlashDownLoad.cpp" FORMNAME="" UNITNAME="FlashDownLoad" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="MDT_Component\error_handler\src\GCTrace.cpp" FORMNAME="" UNITNAME="GCTrace" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="LinkMapFileManager\src\GCFileFinder.cpp" FORMNAME="" UNITNAME="GCFileFinder" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="MDT_Component\error_handler\src\GCGetLastErr.cpp" FORMNAME="" UNITNAME="GCGetLastErr" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="MDT_Component\error_handler\src\MDT_ErrorTypes.cpp" FORMNAME="" UNITNAME="MDT_ErrorTypes" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="META_dll\lib\META_DLL.lib" FORMNAME="" UNITNAME="META_DLL.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="META_dll\lib\Controls.lib" FORMNAME="" UNITNAME="Controls.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="MDT_Component\thread\src\T_UpdateParameter.cpp" FORMNAME="" UNITNAME="T_UpdateParameter.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="MDT_Component\thread\src\T_META_Common.cpp" FORMNAME="" UNITNAME="T_META_Common" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="MDT_Component\thread\src\T_ResetToFactoryDefault.cpp" FORMNAME="" UNITNAME="T_ResetToFactoryDefault" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="efusewriter\src\mdt_efusewriter_cefusewriterconfigfile.cpp" FORMNAME="" UNITNAME="mdt_efusewriter_cefusewriterconfigfile.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="efusewriter\src\mdt_efusewriter_cefusewriterfilereader.cpp" FORMNAME="" UNITNAME="mdt_efusewriter_cefusewriterfilereader.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="efusewriter\src\mdt_efusewriter_cefusewriterlockfile.cpp" FORMNAME="" UNITNAME="mdt_efusewriter_cefusewriterlockfile.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="efusewriter\src\mdt_handle_rwlock.cpp" FORMNAME="" UNITNAME="mdt_handle_rwlock" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="efusewriter\src\EFuseReader.cpp" FORMNAME="" UNITNAME="EFuseReader" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="efusewriter\src\cmdtefusereaderhandle.cpp" FORMNAME="" UNITNAME="cmdtefusereaderhandle" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Brom_dll\lib\brom.lib" FORMNAME="" UNITNAME="brom.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="efusewriter\src\cmdtefuseparameterhandle.cpp" FORMNAME="" UNITNAME="cmdtefuseparameterhandle" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="efusewriter\src\cmdtefusewriterhandle.cpp" FORMNAME="" UNITNAME="cmdtefusewriterhandle" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Brom_dll\inc\USBSwitchDLLibrary.h" FORMNAME="" UNITNAME="USBSwitchDLLibrary.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="MDT_Component\thread\inc\CriticalSectionManager.h" FORMNAME="" UNITNAME="CriticalSectionManager.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="MDT_Component\thread\src\CriticalSectionManager.cpp" FORMNAME="" UNITNAME="CriticalSectionManager" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Brom_dll\lib\USBSwitchDLLibrary.lib" FORMNAME="" UNITNAME="USBSwitchDLLibrary.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Brom_dll\lib\FlashtoolLib.lib" FORMNAME="" UNITNAME="FlashtoolLib.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Brom_dll\inc\sp_brom.h" FORMNAME="" UNITNAME="sp_brom.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Des\lib\des.lib" FORMNAME="" UNITNAME="des.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Des\inc\des.h" FORMNAME="" UNITNAME="des.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\ChgpasswdForm\Form_Changepw.cpp" FORMNAME="Form_Chgpasswd" UNITNAME="Form_Changepw" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Form\EngineerpwForm\Form_EngineerPasswd.cpp" FORMNAME="Form_Engineerpw" UNITNAME="Form_EngineerPasswd" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=0
+MajorVer=5
+MinorVer=1348
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=2052
+CodePage=936
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=5.1348.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+
+[HistoryLists\hlIncludePath]
+Count=21
+Item0=Form\EngineerpwForm;Form\ChgpasswdForm;MDT_Component\error_handler\src;MDT_Component\thread\src;INIFileHandle\src;Form\MainForm;efusewriter\src;SV5_DownloadThread\src;LinkMapFileManager\src;Form\ToolSettingForm;Form\AboutForm;Form\SetBeginComPortForm;Form\InputImageDlgForm;Form\EFuseParameterViewerForm;META_App\src;C:\Documents and Settings\mtk70823;Comm;Comm\USB COM;META App;GPS;Comm\PCMCIA;FailReason;Form;$(BCB)\include;$(BCB)\include\vcl;Common;INIFileHandle;Parameter;Comm\PCMCIA\Inc;Brom_dll\inc;META_dll\inc;E:\MTK_Tool\MDT\W1332\Official\Multiport_download_src_v5.1332.00.00\Des\inc
+Item1=MDT_Component\error_handler\src;MDT_Component\thread\src;INIFileHandle\src;Form\MainForm;efusewriter\src;SV5_DownloadThread\src;LinkMapFileManager\src;Form\ToolSettingForm;Form\AboutForm;Form\SetBeginComPortForm;Form\InputImageDlgForm;Form\EFuseParameterViewerForm;META_App\src;C:\Documents and Settings\mtk70823;Comm;Comm\USB COM;META App;GPS;Comm\PCMCIA;FailReason;Form;$(BCB)\include;$(BCB)\include\vcl;Common;INIFileHandle;Parameter;Comm\PCMCIA\Inc;Brom_dll\inc;META_dll\inc;E:\MTK_Tool\MDT\W1332\Official\Multiport_download_src_v5.1332.00.00\Des\inc
+Item2=MDT_Component\error_handler\src;MDT_Component\thread\src;INIFileHandle\src;Form\MainForm;efusewriter\src;SV5_DownloadThread\src;LinkMapFileManager\src;Form\ToolSettingForm;Form\AboutForm;Form\SetBeginComPortForm;Form\InputImageDlgForm;Form\EFuseParameterViewerForm;META_App\src;C:\Documents and Settings\mtk70823;Comm;Comm\USB COM;META App;GPS;Comm\PCMCIA;FailReason;Form;$(BCB)\include;$(BCB)\include\vcl;Common;INIFileHandle;Parameter;Comm\PCMCIA\Inc;Brom_dll\inc;META_dll\inc
+Item3=MDT_Component\error_handler\src;MDT_Component\thread\src;INIFileHandle\src;Form\MainForm;efusewriter\src;SV5_DownloadThread\src;LinkMapFileManager\src;Form\ToolSettingForm;Form\AboutForm;Form\SetBeginComPortForm;Form\InputImageDlgForm;Form\EFuseParameterViewerForm;META_App\src;C:\Documents and Settings\mtk70823;Comm;Comm\USB COM;META App;GPS;Comm\PCMCIA;FailReason;Form;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;Brom dll;Common;INIFileHandle;META dll;SLA Challenge dll;Parameter;Comm\PCMCIA\Inc
+Item4=C:\Documents and Settings\mtk70823;Comm;Comm\USB COM;META App;GPS;Comm\PCMCIA;FailReason;Form;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;Brom dll;Common;INIFileHandle;META dll;SLA Challenge dll;Parameter;Comm\PCMCIA\Inc
+Item5=Comm;Comm\USB COM;META App;GPS;Comm\PCMCIA;FailReason;Form;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;Brom dll;Common;INIFileHandle;META dll;SLA Challenge dll;Parameter;Comm\PCMCIA\Inc
+Item6=Comm\USB COM;META App;GPS;Comm\PCMCIA;FailReason;Form;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;Brom dll;Common;INIFileHandle;META dll;SLA Challenge dll;Parameter;Comm\PCMCIA\Inc
+Item7=META App;GPS;Comm\PCMCIA;FailReason;Form;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;Brom dll;Common;INIFileHandle;META dll;SLA Challenge dll;Parameter;Comm\PCMCIA\Inc
+Item8=GPS;Comm\PCMCIA;FailReason;Form;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;Brom dll;Common;INIFileHandle;META dll;SLA Challenge dll;Parameter;Comm\PCMCIA\Inc
+Item9=Comm\PCMCIA;FailReason;Form;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;Brom dll;Common;INIFileHandle;META dll;SLA Challenge dll;Parameter;Comm\PCMCIA\Inc
+Item10=Comm\PCMCIA;FailReason;Form;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;Brom dll;Common;INIFileHandle;META dll;SLA Challenge dll;Parameter
+Item11=FailReason;Form;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;Brom dll;Common;INIFileHandle;META dll;SLA Challenge dll;Parameter
+Item12=FailReason;Form;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;Brom dll;Common;INIFileHandle;META dll;SLA Challenge dll
+Item13=FailReason;Form;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;Brom dll;Common;INIFileHandle;META dll
+Item14=FailReason;Form;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;Brom dll;Common;INIFileHandle
+Item15=Form;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;Brom dll;Common;INIFileHandle
+Item16=C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;Brom dll;Common;INIFileHandle
+Item17=C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;Brom dll;Common;INIFileHandle;C:\Multiport download source\Multiport_DL source v2.4.1004_VCL\Brom dll
+Item18=C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;Brom dll;Common;INIFileHandle;C:\Multiport download source\Multiport_DL source v2.4.1004_VCL\Common
+Item19=C:\Program Files\Borland\CBuilder6\Projects;C:\Multiport download source\Multiport_DL source v2.4.1004_VCL;freqz;firls;D:\Meta\Andy\Mfiles;$(BCB)\include;$(BCB)\include\vcl
+Item20=freqz;firls;D:\Meta\Andy\Mfiles;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=17
+Item0=Form\EngineerpwForm;Form\ChgpasswdForm;MDT_Component\error_handler\src;MDT_Component\thread\src;INIFileHandle\src;Form\MainForm;efusewriter\src;SV5_DownloadThread\src;LinkMapFileManager\src;Form\ToolSettingForm;Form\AboutForm;Form\SetBeginComPortForm;Form\InputImageDlgForm;Form\EFuseParameterViewerForm;META_App\src;C:\Documents and Settings\mtk70823;Comm;Comm\USB COM;META App;GPS;Comm\PCMCIA;FailReason;Form;Common;INIFileHandle;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\Lib\Psdk;E:\MTK_Tool\MDT\W1332\Official\Multiport_download_src_v5.1332.00.00\Des\lib
+Item1=MDT_Component\error_handler\src;MDT_Component\thread\src;INIFileHandle\src;Form\MainForm;efusewriter\src;SV5_DownloadThread\src;LinkMapFileManager\src;Form\ToolSettingForm;Form\AboutForm;Form\SetBeginComPortForm;Form\InputImageDlgForm;Form\EFuseParameterViewerForm;META_App\src;C:\Documents and Settings\mtk70823;Comm;Comm\USB COM;META App;GPS;Comm\PCMCIA;FailReason;Form;Common;INIFileHandle;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\Lib\Psdk;E:\MTK_Tool\MDT\W1332\Official\Multiport_download_src_v5.1332.00.00\Des\lib
+Item2=MDT_Component\error_handler\src;MDT_Component\thread\src;INIFileHandle\src;Form\MainForm;efusewriter\src;SV5_DownloadThread\src;LinkMapFileManager\src;Form\ToolSettingForm;Form\AboutForm;Form\SetBeginComPortForm;Form\InputImageDlgForm;Form\EFuseParameterViewerForm;META_App\src;C:\Documents and Settings\mtk70823;Comm;Comm\USB COM;META App;GPS;Comm\PCMCIA;FailReason;Form;Common;INIFileHandle;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\Lib\Psdk
+Item3=C:\Documents and Settings\mtk70823;Comm;Comm\USB COM;META App;GPS;Comm\PCMCIA;FailReason;Form;Common;INIFileHandle;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\Lib\Psdk
+Item4=Comm;Comm\USB COM;META App;GPS;Comm\PCMCIA;FailReason;Form;Common;INIFileHandle;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\Lib\Psdk
+Item5=Comm\USB COM;META App;GPS;Comm\PCMCIA;FailReason;Form;Common;INIFileHandle;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\Lib\Psdk
+Item6=Comm\USB COM;META App;GPS;Comm\PCMCIA;FailReason;Form;Common;INIFileHandle;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item7=Comm\USB COM;META App;GPS;Comm\PCMCIA;FailReason;Form;Common;INIFileHandle;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item8=Comm\USB COM;META App;GPS;Comm\PCMCIA;FailReason;Form;Common;INIFileHandle;C:\Program Files\Borland\CBuilder6\Projects;C:\Multiport download source\Multiport_DL source v2.4.1004_VCL;$(BCB)\Projects\Lib;freqz;firls;D:\Meta\Andy\Mfiles;$(BCB)\lib\obj;$(BCB)\lib
+Item9=META App;GPS;Comm\PCMCIA;FailReason;Form;Common;INIFileHandle;C:\Program Files\Borland\CBuilder6\Projects;C:\Multiport download source\Multiport_DL source v2.4.1004_VCL;$(BCB)\Projects\Lib;freqz;firls;D:\Meta\Andy\Mfiles;$(BCB)\lib\obj;$(BCB)\lib
+Item10=GPS;Comm\PCMCIA;FailReason;Form;Common;INIFileHandle;C:\Program Files\Borland\CBuilder6\Projects;C:\Multiport download source\Multiport_DL source v2.4.1004_VCL;$(BCB)\Projects\Lib;freqz;firls;D:\Meta\Andy\Mfiles;$(BCB)\lib\obj;$(BCB)\lib
+Item11=Comm\PCMCIA;FailReason;Form;Common;INIFileHandle;C:\Program Files\Borland\CBuilder6\Projects;C:\Multiport download source\Multiport_DL source v2.4.1004_VCL;$(BCB)\Projects\Lib;freqz;firls;D:\Meta\Andy\Mfiles;$(BCB)\lib\obj;$(BCB)\lib
+Item12=FailReason;Form;Common;INIFileHandle;C:\Program Files\Borland\CBuilder6\Projects;C:\Multiport download source\Multiport_DL source v2.4.1004_VCL;$(BCB)\Projects\Lib;freqz;firls;D:\Meta\Andy\Mfiles;$(BCB)\lib\obj;$(BCB)\lib
+Item13=Form;Common;INIFileHandle;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\Projects\Lib;freqz;firls;$(BCB)\lib\obj;$(BCB)\lib
+Item14=Common;INIFileHandle;C:\Program Files\Borland\CBuilder6\Projects;C:\Multiport download source\Multiport_DL source v2.4.1004_VCL;$(BCB)\Projects\Lib;freqz;firls;D:\Meta\Andy\Mfiles;$(BCB)\lib\obj;$(BCB)\lib
+Item15=INIFileHandle;C:\Program Files\Borland\CBuilder6\Projects;C:\Multiport download source\Multiport_DL source v2.4.1004_VCL;$(BCB)\Projects\Lib;freqz;firls;D:\Meta\Andy\Mfiles;$(BCB)\lib\obj;$(BCB)\lib
+Item16=C:\Program Files\Borland\CBuilder6\Projects;C:\Multiport download source\Multiport_DL source v2.4.1004_VCL;$(BCB)\Projects\Lib;freqz;firls;D:\Meta\Andy\Mfiles;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=6
+Item0=$(USERDEFINES);NO_WIN32_LEAN_AND_MEAN
+Item1=$(USERDEFINES);NO_WIN32_LEAN_AND_MEAN;_DEBUG
+Item2=NO_WIN32_LEAN_AND_MEAN
+Item3=NO_WIN32_LEAN_AND_MEAN;SERVICE_CENTER
+Item4=NO_WIN32_LEAN_AND_MEAN;_DEBUG
+Item5=NO_WIN32_LEAN_AND_MEAN;SERVICE_CENTER;_DEBUG
+
+[HistoryLists\hlIntOutputDir]
+Count=1
+Item0=output
+
+[HistoryLists\hlFinalOutputDir]
+Count=2
+Item0=output\
+Item1=output
+
+[HistoryLists\hIBPIOutputDir]
+Count=1
+Item0=output
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=1
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>
